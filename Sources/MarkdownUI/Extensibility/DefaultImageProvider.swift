@@ -13,7 +13,8 @@ public struct DefaultImageProvider: ImageProvider {
         ResizeToFit(idealSize: idealSize) {
           image.resizable()
                 .scaledToFit()
-        }
+               
+        }.frame(width: 300, height: 300)
       }
     }
   }
